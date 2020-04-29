@@ -69,3 +69,20 @@ fastlane/test_output
 
 # Xcode
 *.xcodeproj/**
+config.xcconfig
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# libsodium static library
+libsodium*/**
