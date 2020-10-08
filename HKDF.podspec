@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "HKDF"
-  s.version       = "1.0.5"
+  s.version       = "1.0.6"
   s.summary       = "HKDF using HMAC-SHA-512/256"
   s.platform      = :ios, "11.0"
   s.swift_version = "5.0"
@@ -14,6 +14,10 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Sources/**/*"
 
-  s.dependency "Sodium"
+  #s.dependency "Sodium"
+  s.dependency 'Sodium-Fork'
+
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
