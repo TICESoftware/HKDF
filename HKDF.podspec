@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "HKDF"
-  s.version       = "1.0.7"
+  s.version       = "1.0.8"
   s.summary       = "HKDF using HMAC-SHA-512/256"
   s.platform      = :ios, "12.0"
   s.swift_version = "5.0"
