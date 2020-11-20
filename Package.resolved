@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Sodium",
-        "repositoryURL": "https://github.com/jedisct1/swift-sodium.git",
+        "repositoryURL": "https://github.com/TICESoftware/swift-sodium.git",
         "state": {
-          "branch": null,
-          "revision": "176745ddc4991b27f80c3c2637652eb33b5782eb",
-          "version": "0.9.0"
+          "branch": "linux",
+          "revision": "d9ce2f0a2746f978ecd7d2c49f4fae2486f34567",
+          "version": null
         }
       }
     ]
