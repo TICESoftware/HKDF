@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
-        "package": "Sodium",
-        "repositoryURL": "https://github.com/jedisct1/swift-sodium.git",
+        "package": "Clibsodium",
+        "repositoryURL": "https://github.com/TICESoftware/Clibsodium",
         "state": {
-          "branch": null,
-          "revision": "4f9164a0a2c9a6a7ff53a2833d54a5c79c957342",
-          "version": "0.9.1"
+          "branch": "spmWorkaround",
+          "revision": "1299f1735480130410c1d277c5278b6100159a51",
+          "version": null
+        }
+      },
+      {
+        "package": "Sodium",
+        "repositoryURL": "https://github.com/TICESoftware/swift-sodium.git",
+        "state": {
+          "branch": "spmWorkaround",
+          "revision": "30191738f332423382c7048fdd716f62e0c5dd54",
+          "version": null
         }
       }
     ]
