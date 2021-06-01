@@ -10,14 +10,15 @@ let package = Package(
             targets: ["HKDF"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/TICESoftware/swift-sodium.git", from: "0.9.2")
+        .package(url: "https://github.com/TICESoftware/swift-sodium.git", .branch("spmWorkaround")),
+        .package(url: "https://github.com/TICESoftware/Clibsodium.git", from: "1.0.1"),
     ],
     targets: [
         .target(
             name: "HKDF",
-            dependencies: ["Sodium"]),
+            dependencies: ["Sodium", "Clibsodium"]),
         .testTarget(
             name: "HKDFTests",
-            dependencies: ["HKDF", "Sodium"]),
+            dependencies: ["HKDF", "Sodium", "Clibsodium"]),
     ]
 )
